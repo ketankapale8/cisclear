@@ -24,7 +24,7 @@ mongoose.connect(db, { useNewUrlParser : true , useUnifiedTopology : true })
 app.use('/api/users', authRoute);
 app.use('/api/users', updateRoute)
 app.use('/api/users' ,deleteInfo )
-app.use('/api/users' ,getUser )
+app.use('/api/users' ,getUser)
 
 // handle production issues //
 if(process.env.NODE_ENV=== "production"){
